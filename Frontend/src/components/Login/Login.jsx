@@ -49,7 +49,7 @@ const Login = () => {
             value={credentials.password}
             onChange={handleChange}
           />
-          <button type="submit" className="login-btn">Login</button>
+          <button type="submit" className="login-btn" onClick={()=>window.location.href="/dashboard"}>Login</button>
         </form>
       </div>
     </div>
