@@ -22,6 +22,12 @@ app.get("/health-check",(req:any,res:any)=>{
         msg : "Look server is healthy "
     })
 })
+app.get("/health",(req:any,res:any)=>{
+
+    res.status(200).json({
+        msg : " server is server "
+    })
+})
 app.listen(PORT, ()=>{
     console.log(`server running on ${PORT}`);
     
